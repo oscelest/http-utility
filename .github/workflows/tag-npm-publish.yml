@@ -16,49 +16,50 @@ jobs:
       - run: npm ci
       - run: npm test
 
-  update:
+  get-version:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Get version from tag
         run: echo "TAG=$(echo $GITHUB_REF | sed -s 's/.*\([0-9]\+\.[0-9]\+\.[0-9]\+\).*/\1/')" >> $GITHUB_ENV
-
-      - name: Set up GitHub Actions Bot
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
       - name: Apply version
-        run: npm version $TAG --no-git-tag-version --silent
-
-      - name: Add updated package.json to commit
-        run: git add package.json
-
-      - name: Commit changes to main branch
-        run: git commit -m "Updating version to $TAG"
-
-      - name: fetch from master
-        run: git fetch origin main
-
-      - name: push code to master
-        run: git push origin HEAD:main
+        run: npm version $TAG --no-git-tag-version
 
   publish-npm:
-    needs: update
+    needs: get-version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-      - run: git checkout HEAD^
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm run build
-      - run: npm version
-#      - run: npm publish --access public
-#        env:
-#          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - run: npm version $TAG --no-git-tag-version --silent
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+  update-version:
+    needs: publish-npm
+    - uses: actions/checkout@v3
+    - name: Set up GitHub Actions Bot
+      run: |
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<>"
+    - name: Apply version
+      run: npm version $TAG --no-git-tag-version
+
+    - name: Add updated package.json to commit
+      run: git add package.json
+
+    - name: Commit changes to main branch
+      run: git commit -m "Updating version to $TAG"
+
+    - name: fetch from master
+      run: git fetch origin main
+
+    - name: push code to master
+      run: git push origin HEAD:main
