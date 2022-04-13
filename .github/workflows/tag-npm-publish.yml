@@ -30,7 +30,7 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - name: Apply version
-        run: npm version $TAG --no-git-tag-version
+        run: npm version $TAG --no-git-tag-version --silent
 
       - name: Add updated package.json to commit
         run: git add package.json
@@ -55,6 +55,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm run build
-      - run: npm publish --access public
+      - run: npm publish --access public --tag $TAG
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
