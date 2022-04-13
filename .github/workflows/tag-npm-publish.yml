@@ -1,4 +1,4 @@
-name: Node.js Package
+name: Publish NPM package on Tag
 
 on:
   push:
