@@ -1,7 +1,7 @@
 {
   "name": "@noxy/http-utility",
   "version": "0.0.0",
-  "description": "Basic HTTP request structured as a class.",
+  "description": "HTTP utility library including codes, messages, and headers.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "umd:main": "dist/umd/index.js",
