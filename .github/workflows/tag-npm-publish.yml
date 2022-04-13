@@ -44,22 +44,23 @@ jobs:
 
   update-version:
     needs: publish-npm
-    - uses: actions/checkout@v3
-    - name: Set up GitHub Actions Bot
-      run: |
-        git config user.name "GitHub Actions Bot"
-        git config user.email "<>"
-    - name: Apply version
-      run: npm version $TAG --no-git-tag-version
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up GitHub Actions Bot
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: Apply version
+        run: npm version $TAG --no-git-tag-version
 
-    - name: Add updated package.json to commit
-      run: git add package.json
+      - name: Add updated package.json to commit
+        run: git add package.json
 
-    - name: Commit changes to main branch
-      run: git commit -m "Updating version to $TAG"
+      - name: Commit changes to main branch
+        run: git commit -m "Updating version to $TAG"
 
-    - name: fetch from master
-      run: git fetch origin main
+      - name: fetch from master
+        run: git fetch origin main
 
-    - name: push code to master
-      run: git push origin HEAD:main
+      - name: push code to master
+        run: git push origin HEAD:main
