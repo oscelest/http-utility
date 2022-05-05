@@ -1,6 +1,7 @@
 import HTTPStatusCode from "./HTTPStatusCode";
 
 export const HTTPStatusMessage: HTTPStatusMessage = {
+  [HTTPStatusCode.Unknown]: "Unknown",
 
   // --- Information responses --- //
 
@@ -90,6 +91,7 @@ export const HTTPStatusMessage: HTTPStatusMessage = {
 };
 
 export interface HTTPStatusMessage {
+  [HTTPStatusCode.Unknown]: "Unknown";
   [HTTPStatusCode.Continue]: "Continue";
   [HTTPStatusCode.SwitchingProtocols]: "Switching Protocols";
   [HTTPStatusCode.Processing]: "Processing";
