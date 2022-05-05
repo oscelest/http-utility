@@ -1,5 +1,7 @@
 export enum HTTPStatusCode {
 
+  Unknown                         = 0,
+
   // --- Information responses --- //
 
   Continue                        = 100,
@@ -12,24 +14,24 @@ export enum HTTPStatusCode {
   OK                              = 200,
   Created                         = 201,
   Accepted                        = 202,
-  NonAuthoritativeInformation = 203,
-  NoContent                   = 204,
-  ResetContent                = 205,
-  PartialContent              = 206,
-  MultiStatus                 = 207,
-  AlreadyReported             = 208,
-  IMUsed                      = 226,
+  NonAuthoritativeInformation     = 203,
+  NoContent                       = 204,
+  ResetContent                    = 205,
+  PartialContent                  = 206,
+  MultiStatus                     = 207,
+  AlreadyReported                 = 208,
+  IMUsed                          = 226,
 
   // --- Redirection messages --- //
 
-  MultipleChoices             = 300,
-  MovedPermanent              = 301,
-  Found                       = 302,
-  SeeOther                    = 303,
-  NotModified                 = 304,
-  UseProxy                    = 305,
-  TemporaryRedirect           = 307,
-  PermanentRedirect           = 308,
+  MultipleChoices                 = 300,
+  MovedPermanent                  = 301,
+  Found                           = 302,
+  SeeOther                        = 303,
+  NotModified                     = 304,
+  UseProxy                        = 305,
+  TemporaryRedirect               = 307,
+  PermanentRedirect               = 308,
 
   // --- Client error responses -- //
 
