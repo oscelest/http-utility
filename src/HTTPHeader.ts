@@ -1,4 +1,4 @@
-export enum HTTPHeader {
+enum HTTPHeader {
   /**
    * @since Experimental
    */

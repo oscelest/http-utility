@@ -1,4 +1,4 @@
-export enum HTTPMethod {
+enum HTTPMethod {
   // The GET method requests a representation of the specified resource. Requests using GET should only retrieve data.
   get     = "get",
   GET     = "GET",

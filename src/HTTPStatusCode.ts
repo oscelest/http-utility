@@ -1,4 +1,4 @@
-export enum HTTPStatusCode {
+enum HTTPStatusCode {
 
   Unknown                         = 0,
 
