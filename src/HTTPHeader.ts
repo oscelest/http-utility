@@ -2,360 +2,360 @@ enum HTTPHeader {
   /**
    * @since Experimental
    */
-  AcceptCH                        = "Accept-CH",
+  AcceptCH                        = "accept-ch",
   /**
    * @deprecated
    * @since Experimental
    */
-  AcceptCHLifetime                = "Accept-CH-Lifetime",
+  AcceptCHLifetime                = "accept-ch-lifetime",
 
   /**
    * @readonly
    */
-  AcceptCharset                   = "Accept-Charset",
+  AcceptCharset                   = "accept-charset",
   /**
    * @readonly
    */
-  AcceptEncoding                  = "Accept-Encoding",
-  AcceptLanguage                  = "Accept-Language",
-  AcceptPatch                     = "Accept-Patch",
-  AcceptPost                      = "Accept-Post",
-  AcceptRanges                    = "Accept-Ranges",
-  Accept                          = "Accept",
+  AcceptEncoding                  = "accept-encoding",
+  AcceptLanguage                  = "accept-language",
+  AcceptPatch                     = "accept-patch",
+  AcceptPost                      = "accept-post",
+  AcceptRanges                    = "accept-ranges",
+  Accept                          = "accept",
 
-  AccessControlAllowCredentials   = "Access-Control-Allow-Credentials",
+  AccessControlAllowCredentials   = "access-control-allow-credentials",
   /**
    * @readonly
    */
-  AccessControlAllowHeaders       = "Access-Control-Allow-Headers",
+  AccessControlAllowHeaders       = "access-control-allow-headers",
   /**
    * @readonly
    */
-  AccessControlAllowMethods       = "Access-Control-Allow-Methods",
-  AccessControlAllowOrigin        = "Access-Control-Allow-Origin",
-  AccessControlExposeHeaders      = "Access-Control-Expose-Headers",
-  AccessControlMaxAge             = "Access-Control-Max-Age",
-  AccessControlRequestHeaders     = "Access-Control-Request-Headers",
-  AccessControlRequestMethod      = "Access-Control-Request-Method",
+  AccessControlAllowMethods       = "access-control-allow-methods",
+  AccessControlAllowOrigin        = "access-control-allow-origin",
+  AccessControlExposeHeaders      = "access-control-expose-headers",
+  AccessControlMaxAge             = "access-control-max-age",
+  AccessControlRequestHeaders     = "access-control-request-headers",
+  AccessControlRequestMethod      = "access-control-request-method",
 
-  Age                             = "Age",
+  Age                             = "age",
 
-  Allow                           = "Allow",
+  Allow                           = "allow",
 
-  AltSvc                          = "Alt-Svc",
+  AltSvc                          = "alt-svc",
 
-  Authorization                   = "Authorization",
+  Authorization                   = "authorization",
 
-  CacheControl                    = "Cache-Control",
+  CacheControl                    = "cache-control",
 
-  ClearSiteData                   = "Clear-Site-Data",
+  ClearSiteData                   = "clear-site-data",
 
   /**
    * @readonly
    */
-  Connection                      = "Connection",
+  Connection                      = "connection",
 
-  ContentDisposition              = "Content-Disposition",
+  ContentDisposition              = "content-disposition",
   /**
    * @Deprecated
    */
-  ContentDPR                      = "Content-DPR",
-  ContentEncoding                 = "Content-Encoding",
-  ContentLanguage                 = "Content-Language",
+  ContentDPR                      = "content-dpr",
+  ContentEncoding                 = "content-encoding",
+  ContentLanguage                 = "content-language",
 
   /**
    * @readonly
    */
-  ContentLength                   = "Content-Length",
-  ContentLocation                 = "Content-Location",
-  ContentRange                    = "Content-Range",
-  ContentSecurityPolicyReportOnly = "Content-Security-Policy-Report-Only",
-  ContentSecurityPolicy           = "Content-Security-Policy",
-  ContentType                     = "Content-Type",
+  ContentLength                   = "content-length",
+  ContentLocation                 = "content-location",
+  ContentRange                    = "content-range",
+  ContentSecurityPolicyReportOnly = "content-security-policy-report-only",
+  ContentSecurityPolicy           = "content-security-policy",
+  ContentType                     = "content-type",
 
-  Cookie                          = "Cookie",
+  Cookie                          = "cookie",
 
-  CrossOriginEmbedderPolicy       = "Cross-Origin-Embedder-Policy",
-  CrossOriginOpenerPolicy         = "Cross-Origin-Opener-Policy",
-  CrossOriginResourcePolicy       = "Cross-Origin-Resource-Policy",
+  CrossOriginEmbedderPolicy       = "cross-origin-embedder-policy",
+  CrossOriginOpenerPolicy         = "cross-origin-opener-policy",
+  CrossOriginResourcePolicy       = "cross-origin-resource-policy",
 
   /**
    * @readonly
    */
-  Date                            = "Date",
+  Date                            = "date",
 
   /**
    * @Since Experimental
    */
-  DeviceMemory                    = "Device-Memory",
+  DeviceMemory                    = "device-memory",
 
-  Digest                          = "Digest",
+  Digest                          = "digest",
 
   /**
    * @readonly
    */
-  DNT                             = "DNT",
+  DNT                             = "dnt",
 
   /**
    * @Since Experimental
    */
-  Downlink                        = "Downlink",
+  Downlink                        = "downlink",
 
   /**
    * @Deprecated
    * @since Experimental
    */
-  DPR                             = "DPR",
+  DPR                             = "dpr",
 
   /**
    * @since Experimental
    */
-  EarlyData                       = "Early-Data",
+  EarlyData                       = "early-data",
 
   /**
    * @since Experimental
    */
-  ECT                             = "ECT",
+  ECT                             = "ect",
 
-  ETag                            = "ETag",
+  ETag                            = "etag",
 
-  ExpectCT                        = "Expect-CT",
+  ExpectCT                        = "expect-ct",
 
   /**
    * @readonly
    */
-  Expect                          = "Expect",
+  Expect                          = "expect",
 
-  Expires                         = "Expires",
+  Expires                         = "expires",
 
   /**
    * @readonly
    * @since Experimental
    */
-  FeaturePolicy                   = "Feature-Policy",
+  FeaturePolicy                   = "feature-policy",
 
-  Forwarded                       = "Forwarded",
+  Forwarded                       = "forwarded",
 
-  From                            = "From",
-
-  /**
-   * @readonly
-   */
-  Host                            = "Host",
-
-  IfMatch                         = "If-Match",
-  IfModifiedSince                 = "If-Modified-Since",
-  IfNoneMatch                     = "If-None-Match",
-  IfRange                         = "If-Range",
-  IfUnmodifiedSince               = "If-Unmodified-Since",
+  From                            = "from",
 
   /**
    * @readonly
    */
-  KeepAlive                       = "Keep-Alive",
+  Host                            = "host",
+
+  IfMatch                         = "if-match",
+  IfModifiedSince                 = "if-modified-since",
+  IfNoneMatch                     = "if-none-match",
+  IfRange                         = "if-range",
+  IfUnmodifiedSince               = "if-unmodified-since",
+
+  /**
+   * @readonly
+   */
+  KeepAlive                       = "keep-alive",
 
   /**
    * @Deprecated
    * @since Experimental
    */
-  LargeAllocation                 = "Large-Allocation",
+  LargeAllocation                 = "large-allocation",
 
-  LastModified                    = "Last-Modified",
+  LastModified                    = "last-modified",
 
-  Link                            = "Link",
+  Link                            = "link",
 
-  Location                        = "Location",
+  Location                        = "location",
 
-  NEL                             = "NEL",
+  NEL                             = "nel",
 
   /**
    * @readonly
    */
-  Origin                          = "Origin",
+  Origin                          = "origin",
 
   /**
    * @Deprecated
    */
-  Pragma                          = "Pragma",
+  Pragma                          = "pragma",
 
   /**
    * @readonly
    */
-  ProxyAuthenticate               = "Proxy-Authenticate",
+  ProxyAuthenticate               = "proxy-authenticate",
   /**
    * @readonly
    */
-  ProxyAuthorization              = "Proxy-Authorization",
+  ProxyAuthorization              = "proxy-authorization",
 
   /**
    * @Deprecated
    */
-  PublicKeyPinsReportOnly         = "Public-Key-Pins-Report-Only",
+  PublicKeyPinsReportOnly         = "public-key-pins-report-only",
   /**
    * @Deprecated
    */
-  PublicKeyPins                   = "Public-Key-Pins",
+  PublicKeyPins                   = "public-key-pins",
 
-  Range                           = "Range",
+  Range                           = "range",
   /**
    * @readonly
    */
-  Referer                         = "Referer",
-  ReferrerPolicy                  = "Referrer-Policy",
+  Referer                         = "referer",
+  ReferrerPolicy                  = "referrer-policy",
 
-  RetryAfter                      = "Retry-After",
+  RetryAfter                      = "retry-after",
   /**
    * @since Experimental
    */
-  RTT                             = "RTT",
+  RTT                             = "rtt",
 
-  SaveData                        = "Save-Data",
+  SaveData                        = "save-data",
 
-  /**
-   * @readonly
-   * @since Experimental
-   */
-  SecCHUAArch                     = "SecCHUAArch",
   /**
    * @readonly
    * @since Experimental
    */
-  SecCHUABitness                  = "SecCHUABitness",
+  SecCHUAArch                     = "secchuaarch",
   /**
    * @readonly
    * @since Experimental
    */
-  SecCHUAFullVersionList          = "SecCHUAFull-Version-List",
+  SecCHUABitness                  = "secchuabitness",
+  /**
+   * @readonly
+   * @since Experimental
+   */
+  SecCHUAFullVersionList          = "secchuafull-version-list",
   /**
    * @readonly
    * @deprecated
    */
-  SecCHUAFullVersion              = "SecCHUAFull-Version",
+  SecCHUAFullVersion              = "secchuafull-version",
   /**
    * @readonly
    * @since Experimental
    */
-  SecCHUAMobile                   = "SecCHUAMobile",
+  SecCHUAMobile                   = "secchuamobile",
   /**
    * @readonly
    * @since Experimental
    */
-  SecCHUAModel                    = "SecCHUAModel",
+  SecCHUAModel                    = "secchuamodel",
   /**
    * @since Experimental
    */
-  SecCHUAPlatformVersion          = "SecCHUAPlatform-Version",
+  SecCHUAPlatformVersion          = "secchuaplatform-version",
   /**
    * @since Experimental
    */
-  SecCHUAPlatform                 = "SecCHUAPlatform",
+  SecCHUAPlatform                 = "secchuaplatform",
   /**
    * @readonly
    * @since Experimental
    */
-  SecCHUA                         = "Sec-CH-UA",
+  SecCHUA                         = "sec-ch-ua",
   /**
    * @readonly
    */
-  SecFetchDest                    = "Sec-Fetch-Dest",
+  SecFetchDest                    = "sec-fetch-dest",
   /**
    * @readonly
    */
-  SecFetchMode                    = "Sec-Fetch-Mode",
+  SecFetchMode                    = "sec-fetch-mode",
   /**
    * @readonly
    */
-  SecFetchSite                    = "Sec-Fetch-Site",
+  SecFetchSite                    = "sec-fetch-site",
   /**
    * @readonly
    */
-  SecFetchUser                    = "Sec-Fetch-User",
+  SecFetchUser                    = "sec-fetch-user",
   /**
    * @readonly
    */
-  SecWebSocketAccept              = "Sec-WebSocket-Accept",
+  SecWebSocketAccept              = "sec-websocket-accept",
 
-  ServerTiming                    = "Server-Timing",
-  Server                          = "Server",
+  ServerTiming                    = "server-timing",
+  Server                          = "server",
 
-  ServiceWorkerNavigationPreload  = "Service-Worker-Navigation-Preload",
+  ServiceWorkerNavigationPreload  = "service-worker-navigation-preload",
 
-  SetCookie                       = "Set-Cookie",
+  SetCookie                       = "set-cookie",
 
-  SourceMap                       = "SourceMap",
+  SourceMap                       = "sourcemap",
 
-  StrictTransportSecurity         = "Strict-Transport-Security",
-
-  /**
-   * @readonly
-   */
-  TE                              = "TE",
-
-  TimingAllowOrigin               = "Timing-Allow-Origin",
-
-  Tk                              = "Tk",
+  StrictTransportSecurity         = "strict-transport-security",
 
   /**
    * @readonly
    */
-  Trailer                         = "Trailer",
+  TE                              = "te",
+
+  TimingAllowOrigin               = "timing-allow-origin",
+
+  Tk                              = "tk",
 
   /**
    * @readonly
    */
-  TransferEncoding                = "Transfer-Encoding",
+  Trailer                         = "trailer",
 
-  UpgradeInsecureRequests         = "Upgrade-Insecure-Requests",
   /**
    * @readonly
    */
-  Upgrade                         = "Upgrade",
+  TransferEncoding                = "transfer-encoding",
 
-  UserAgent                       = "User-Agent",
-
-  Vary                            = "Vary",
+  UpgradeInsecureRequests         = "upgrade-insecure-requests",
   /**
    * @readonly
    */
-  Via                             = "Via",
+  Upgrade                         = "upgrade",
+
+  UserAgent                       = "user-agent",
+
+  Vary                            = "vary",
+  /**
+   * @readonly
+   */
+  Via                             = "via",
 
   /**
    * @Deprecated
    * @since Experimental
    */
-  ViewportWidth                   = "Viewport-Width",
+  ViewportWidth                   = "viewport-width",
 
-  WantDigest                      = "Want-Digest",
-
-  /**
-   * @Deprecated
-   */
-  Warning                         = "Warning",
+  WantDigest                      = "want-digest",
 
   /**
    * @Deprecated
-   * @since Experimental
    */
-  Width                           = "Width",
+  Warning                         = "warning",
 
-  WWWAuthenticate                 = "WWW-Authenticate",
+  /**
+   * @Deprecated
+   * @since Experimental
+   */
+  Width                           = "width",
 
-  XContentTypeOptions             = "X-Content-Type-Options",
-  XDNSPrefetchControl             = "X-DNS-Prefetch-Control",
+  WWWAuthenticate                 = "www-authenticate",
+
+  XContentTypeOptions             = "x-content-type-options",
+  XDNSPrefetchControl             = "x-dns-prefetch-control",
   /**
    * @since Experimental
    */
-  XForwardedFor                   = "X-Forwarded-For",
+  XForwardedFor                   = "x-forwarded-for",
   /**
    * @since Experimental
    */
-  XForwardedHost                  = "X-Forwarded-Host",
+  XForwardedHost                  = "x-forwarded-host",
   /**
    * @since Experimental
    */
-  XForwardedProto                 = "X-Forwarded-Proto",
-  XFrameOptions                   = "X-Frame-Options",
-  XXSSProtection                  = "X-XSS-Protection",
+  XForwardedProto                 = "x-forwarded-proto",
+  XFrameOptions                   = "x-frame-options",
+  XXSSProtection                  = "x-xss-protection",
 }
 
 export default HTTPHeader;
