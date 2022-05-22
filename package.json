@@ -1,7 +1,7 @@
 {
   "name": "@noxy/http-utility",
   "author": "oscelest",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "HTTP utility library including codes, messages, and headers.",
   "license": "MIT",
   "repository": {
