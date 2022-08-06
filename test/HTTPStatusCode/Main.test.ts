@@ -1,11 +1,11 @@
-import HTTP, {IncomingMessage} from "http";
+import HTTP from "http";
 import HTTPMethod from "../../src/HTTPMethod";
 import HTTPStatusCode from "../../src/HTTPStatusCode";
 import HTTPStatusMessage from "../../src/HTTPStatusMessage";
 import Test from "../Variables";
 
 function getRequestCode(code: number) {
-  return new Promise<IncomingMessage>((resolve, reject) => {
+  return new Promise<HTTP.IncomingMessage>((resolve, reject) => {
     const request = HTTP.request({method: HTTPMethod.GET, hostname: Test.host, port: Test.port, path: `/${code}`}, resolve);
     request.on("error", error => reject(error));
     request.end();
@@ -19,7 +19,7 @@ test("200", async () => {
 });
 
 test("300", async () => {
-  const {statusCode, statusMessage, } = await getRequestCode(300);
+  const {statusCode, statusMessage} = await getRequestCode(300);
   expect(statusCode).toBe(HTTPStatusCode.MultipleChoices);
   expect(statusMessage).toBe(HTTPStatusMessage[HTTPStatusCode.MultipleChoices]);
 });
